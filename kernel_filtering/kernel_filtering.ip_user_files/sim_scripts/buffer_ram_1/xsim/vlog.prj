@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../kernel_filtering.gen/sources_1/ip/buffer_ram_1/sim/buffer_ram_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
