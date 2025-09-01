@@ -1,3 +1,5 @@
+2024 EWHA Digital System Design and Laboratory
+
 <img width="1397" height="781" alt="image" src="https://github.com/user-attachments/assets/aa634df7-b812-4a02-a291-dfc63fff0b9c" />
 
 <img width="1395" height="786" alt="image" src="https://github.com/user-attachments/assets/553bfb33-8864-41b0-a7bf-6a010063bc02" />
