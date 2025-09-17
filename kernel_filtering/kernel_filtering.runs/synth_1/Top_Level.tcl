@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.runs/synth_1/Top_Level.tcl"
+  variable script "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.runs/synth_1/Top_Level.tcl"
   variable category "vivado_synth"
 }
 
@@ -55,22 +55,8 @@ if {$::dispatch::connected} {
   }
 }
 
-proc create_report { reportName command } {
-  set status "."
-  append status $reportName ".fail"
-  if { [file exists $status] } {
-    eval file delete [glob $status]
-  }
-  send_msg_id runtcl-4 info "Executing : $command"
-  set retval [eval catch { $command } msg]
-  if { $retval != 0 } {
-    set fp [open $status w]
-    close $fp
-    send_msg_id runtcl-5 warning "$msg"
-  }
-}
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
+set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100ticsg324-1L
 
@@ -78,48 +64,48 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.cache/wt [current_project]
-set_property parent.project_path C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.cache/wt [current_project]
+set_property parent.project_path C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.cache/ip [current_project]
+set_property ip_output_repo c:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files c:/Users/boram/Desktop/kernel_filtering/buffer_ram_1.coe
-add_files c:/Users/boram/Desktop/kernel_filtering/buffer_ram_2.coe
+add_files C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/buffer_ram_1.coe
+add_files C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/buffer_ram_2.coe
 read_verilog -library xil_defaultlib {
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/Buffer1.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/Buffer2.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/Counter.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/Filtering_Flow.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/Filtering_Top.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/GaussianFilter.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/SobelFilter.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/VGA_controller.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/VGA_out.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/VGA_top.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/horizontal_counter.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/switch.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/vertical_counter.v
-  C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/new/Top_Level.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/Buffer1.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/Buffer2.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/Counter.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/Filtering_Flow.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/Filtering_Top.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/GaussianFilter.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/SobelFilter.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/VGA_controller.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/VGA_out.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/VGA_top.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/horizontal_counter.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/switch.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/vertical_counter.v
+  C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/Top_Level.v
 }
-read_ip -quiet c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/ip/clk_25/clk_25.xci
-set_property used_in_implementation false [get_files -all c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_25/clk_25_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_25/clk_25.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_25/clk_25_ooc.xdc]
+read_ip -quiet C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/ip/clk_25/clk_25.xci
+set_property used_in_implementation false [get_files -all c:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_25/clk_25_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_25/clk_25.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_25/clk_25_ooc.xdc]
 
-read_ip -quiet c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/ip/clk_50/clk_50.xci
-set_property used_in_implementation false [get_files -all c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_50/clk_50_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_50/clk_50.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_50/clk_50_ooc.xdc]
+read_ip -quiet C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/ip/clk_50/clk_50.xci
+set_property used_in_implementation false [get_files -all c:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_50/clk_50_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_50/clk_50.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_50/clk_50_ooc.xdc]
 
-read_ip -quiet c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/ip/buffer_ram_1/buffer_ram_1.xci
-set_property used_in_implementation false [get_files -all c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.gen/sources_1/ip/buffer_ram_1/buffer_ram_1_ooc.xdc]
+read_ip -quiet C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/ip/buffer_ram_1/buffer_ram_1.xci
+set_property used_in_implementation false [get_files -all c:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/buffer_ram_1/buffer_ram_1_ooc.xdc]
 
-read_ip -quiet c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/sources_1/ip/buffer_ram_2/buffer_ram_2.xci
-set_property used_in_implementation false [get_files -all c:/Users/boram/Desktop/kernel_filtering/kernel_filtering.gen/sources_1/ip/buffer_ram_2/buffer_ram_2_ooc.xdc]
+read_ip -quiet C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/ip/buffer_ram_2/buffer_ram_2.xci
+set_property used_in_implementation false [get_files -all c:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/buffer_ram_2/buffer_ram_2_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -130,12 +116,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/boram/Desktop/kernel_filtering/Nexys-4-DDR-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/boram/Desktop/kernel_filtering/Nexys-4-DDR-Master.xdc]
+read_xdc C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/Nexys-4-DDR-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/Nexys-4-DDR-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.srcs/utils_1/imports/synth_1/Top_Level.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/utils_1/imports/synth_1/Top_Level.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
@@ -152,7 +138,7 @@ set_param constraints.enableBinaryConstraints false
 write_checkpoint -force -noxdef Top_Level.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file Top_Level_utilization_synth.rpt -pb Top_Level_utilization_synth.pb"
+generate_parallel_reports -reports { "report_utilization -file Top_Level_utilization_synth.rpt -pb Top_Level_utilization_synth.pb"  } 
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

@@ -1,14 +1,24 @@
 #-----------------------------------------------------------
-# Vivado v2023.1 (64-bit)
-# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
-# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Dec  5 02:40:35 2024
-# Process ID: 4104
-# Current directory: C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.runs/buffer_ram_2_synth_1
-# Command line: vivado.exe -log buffer_ram_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source buffer_ram_2.tcl
-# Log file: C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.runs/buffer_ram_2_synth_1/buffer_ram_2.vds
-# Journal file: C:/Users/boram/Desktop/kernel_filtering/kernel_filtering.runs/buffer_ram_2_synth_1\vivado.jou
-# Running On: LAPTOP-4G708Q4E, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 8382 MB
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Sep  3 15:21:26 2025
+# Process ID         : 8260
+# Current directory  : C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.runs/buffer_ram_2_synth_1
+# Command line       : vivado.exe -log buffer_ram_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source buffer_ram_2.tcl
+# Log file           : C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.runs/buffer_ram_2_synth_1/buffer_ram_2.vds
+# Journal file       : C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.runs/buffer_ram_2_synth_1\vivado.jou
+# Running On         : DESKTOP-A3JVTPL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-14700K
+# CPU Frequency      : 3418 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 68422 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72717 MB
+# Available Virtual  : 49243 MB
 #-----------------------------------------------------------
 source buffer_ram_2.tcl -notrace

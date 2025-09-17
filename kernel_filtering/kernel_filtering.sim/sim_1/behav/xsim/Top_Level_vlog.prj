@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog blk_mem_gen_v8_4_6  --include "../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" --include "../../../../kernel_filtering.ip_user_files/ipstatic" \
+"../../../../kernel_filtering.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" \
+
+verilog xil_defaultlib  --include "../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" --include "../../../../kernel_filtering.ip_user_files/ipstatic" \
+"../../../../kernel_filtering.gen/sources_1/ip/buffer_ram_2/sim/buffer_ram_2.v" \
+"../../../../kernel_filtering.gen/sources_1/ip/buffer_ram_1/sim/buffer_ram_1.v" \
+"../../../../kernel_filtering.gen/sources_1/ip/clk_50/clk_50_clk_wiz.v" \
+"../../../../kernel_filtering.gen/sources_1/ip/clk_50/clk_50.v" \
+"../../../../kernel_filtering.gen/sources_1/ip/clk_25/clk_25_clk_wiz.v" \
+"../../../../kernel_filtering.gen/sources_1/ip/clk_25/clk_25.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/Buffer1.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/Buffer2.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/Counter.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/Filtering_Flow.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/Filtering_Top.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/GaussianFilter.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/SobelFilter.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/VGA_controller.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/VGA_out.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/VGA_top.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/horizontal_counter.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/switch.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/vertical_counter.v" \
+"../../../../kernel_filtering.srcs/sources_1/new/Top_Level.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

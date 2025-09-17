@@ -1,0 +1,57 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" into library blk_mem_gen_v8_4_6
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_4
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_6_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_6_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_6_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_6
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/buffer_ram_2/sim/buffer_ram_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buffer_ram_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/buffer_ram_1/sim/buffer_ram_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buffer_ram_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_50/clk_50_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_50_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_50/clk_50.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_50
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_25/clk_25_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_25_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.gen/sources_1/ip/clk_25/clk_25.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_25
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/Buffer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Buffer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/Buffer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Buffer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/Filtering_Flow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Filtering_Flow
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/Filtering_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Filtering_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/GaussianFilter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GaussianFilter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/SobelFilter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SobelFilter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/VGA_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/VGA_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/VGA_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/horizontal_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module horizontal_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/switch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switch
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/vertical_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vertical_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.srcs/sources_1/new/Top_Level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_Level
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LeeEunseo/Documents/GitHub/KernelFiltering_FPGA/kernel_filtering/kernel_filtering.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
